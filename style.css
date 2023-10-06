@@ -41,12 +41,13 @@
     }
 
     #menu{
-        display: none;
+        display: block;
         position: absolute;
         top: 50px;
-        left: 0;
+        left: -400px;
         background-color: blue;
         width: 100%;
+        transition: .8s ease-in-out;
     }
 
     #menu ul{
@@ -54,7 +55,14 @@
         justify-content: space-around;
         align-items: center;
         height: 90vh;
+    }
 
+    #menu ul li {
+        border-bottom: 2px solid white;
+        width: 80%;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
     }
 
 
