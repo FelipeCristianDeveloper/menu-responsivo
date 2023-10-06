@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+#burguer{
+    display: none;
+}
+
+#menu ul{
+    display: flex;
+    gap: 1rem;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+@media (max-width: 460px){
+
+    .top{
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    #burguer{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: blue;
+        width: 100%;
+    }
+
+    #menu ul{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+
+    }
+
+
+}
