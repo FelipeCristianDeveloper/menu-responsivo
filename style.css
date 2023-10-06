@@ -44,7 +44,7 @@
         display: block;
         position: absolute;
         top: 50px;
-        right: -400px;
+        right: -500px;
         background-color: blue;
         width: 100%;
         transition: .8s ease-in-out;
